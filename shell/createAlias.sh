@@ -4,4 +4,4 @@ aws lambda create-alias \
 --description "sample alias" \
 --function-version "\$LATEST" \
 --name DEV \
---profile adminuser
+--profile default
