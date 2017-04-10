@@ -1,0 +1,6 @@
+[
+  {
+    "Id": "1",
+    "Arn": "arn:aws:lambda:us-west-2:396803809648:function:CheckAmazon"
+  }
+]
