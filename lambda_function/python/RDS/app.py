@@ -27,7 +27,7 @@ def handler(event, context):
     item_count = 0
 
     with conn.cursor() as cur:
-        cur.execute("create table Employee3 ( EmpID  int NOT NULL, Name varchar(255) NOT NULL, PRIMARY KEY (EmpID))")
+        cur.execute("create table Employee3 ( EmpID  int NOT None, Name varchar(255) NOT None, PRIMARY KEY (EmpID))")
         cur.execute('insert into Employee3 (EmpID, Name) values(1, "Joe")')
         cur.execute('insert into Employee3 (EmpID, Name) values(2, "Bob")')
         cur.execute('insert into Employee3 (EmpID, Name) values(3, "Mary")')
