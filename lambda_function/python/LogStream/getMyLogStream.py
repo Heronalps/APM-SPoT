@@ -1,7 +1,29 @@
-from __future__ import print_function
-
 import time
 def get_my_log_stream(event, context):
+    """
+    "Insert Infinite loop"
+    while 1:
+        print(event)
+    """
+
+    """
+    "Memory Leak"
+    "Configure event {"seed" : 2}"
+    for key, value in event.items():
+        seed = event["seed"]
+        event[key * seed] = value
+    get_my_log_stream(event, context)
+    """
+
+    """
+    "Exit with an error"
+    #raise IndexError
+    #print(a) #reference a undefined variable - Raise NameError
+    #for #Syntax error
+    #sys.exit("Intentional Exit") #Force Exit
+    """
+
+
     print("Log stream name:", context.log_stream_name)
     print("Log group name:",  context.log_group_name)
     print("Request ID:",context.aws_request_id)
