@@ -31,6 +31,12 @@ func dosomething(){
     }
 }
 
+type MyError string
+
+func (e MyError) Error() string{
+	return fmt.Sprintf("My Error : %s", e)
+}
+
 func getMyLogStream(event *json.RawMessage,
                     context *sparta.LambdaContext,
                     w http.ResponseWriter,
@@ -51,11 +57,11 @@ func getMyLogStream(event *json.RawMessage,
     */
 
     //Exit with error
-
-
-
-
-
+    /*
+    panic("Stop the lambda function") //Panic exit
+    os.Exit(1) // OS Exit
+    fmt.Fprintf(os.Stderr, "error: %v \n ", MyError("Intentional Error")) // Fatal error : Stack overflow
+    */
 
     fmt.Fprintf(w, "%s  ", "This Go function is to get AWS Lambda function log stream! ")
     fmt.Fprintf(w, "%s : %s  ", "AWSRequestID", context.AWSRequestID)
