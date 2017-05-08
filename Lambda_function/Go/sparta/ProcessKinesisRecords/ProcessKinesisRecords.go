@@ -4,6 +4,8 @@ import (
   "encoding/json"
   "fmt"
   "net/http"
+  "encoding/base64"
+  
   logrus "github.com/Sirupsen/logrus"
   sparta "github.com/mweagle/Sparta"
   simplejson "github.com/bitly/go-simplejson"
@@ -17,11 +19,11 @@ func processDynamoDBStream(event *json.RawMessage,
 
     data, _ := event.MarshalJSON()
     js, _ := simplejson.NewJson(data)
-    for i := 0; i < 3; i++{
-        eventID := js.Get("Records").GetIndex(i).Get("eventName").MustString()
-        eventName := js.Get("Records").GetIndex(i).Get("eventID").MustString()
-        fmt.Println("Event ID : " + eventID)
-        fmt.Println("Event Name : " + eventName)
+    length := len(js.Get("Records").MustMap())
+    for i := 0; i < length; i++{
+        decoded := js.Get("Records").GetIndex(i).Get("kinesis").Get("data").MustString()
+        payload, _ := base64.StdEncoding.DecodeString(decoded)
+        fmt.Println("Decoded payload : %q", payload)
 }
 
 
