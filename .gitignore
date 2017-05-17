@@ -1,3 +1,4 @@
 *.zip
 .idea/
 .DS_Store
+rds_config.py
