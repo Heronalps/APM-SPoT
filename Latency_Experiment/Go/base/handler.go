@@ -23,7 +23,7 @@ func Handle(evt json.RawMessage, ctx *runtime.Context) (interface{}, error) {
     var ts = TimeStamp{Source: "Base", Timestamp: base_ts}
     js, err := json.Marshal(ts)
 
-    url := "ec2-52-43-80-154.us-west-2.compute.amazonaws.com"
+    url := "http://ec2-52-43-80-154.us-west-2.compute.amazonaws.com:8080"
     req, err := http.NewRequest("POST", url, bytes.NewBuffer(js))
     req.Header.Set("X-Custom-Header", "latency_experiment")
     req.Header.Set("Content-Type", "application/json")
