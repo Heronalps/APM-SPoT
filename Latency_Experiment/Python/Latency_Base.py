@@ -9,4 +9,4 @@ def lambda_handler(event, context):
     invoke_response = lambda_client.invoke(FunctionName="Latency_dest",
                                            InvocationType='RequestResponse,
                                            Payload=json.dumps(msg))
-    print(invoke_response)
+    return invoke_response['Payload'].read()
