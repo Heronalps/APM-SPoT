@@ -22,3 +22,9 @@ This is a part of SPoT project for which RACELab collaborates with Huawei Cloud.
 
 * 5/5/17
 >Implemented getLogStream, LambdaWithSNS, ProcessDynamoDBStream, ProcessKinesisStream functions in Go under sparta and eawsy framework.
+
+* 5/12/17
+>Experiment calling latency between AWS lambda functions & Implement AWS Lambda function to interact with Shared Log on Aristotle nodes
+
+* 5/19/17
+>Conduct Calling latency experiment in Go on AWS Lambda & Compare the distribution of result with AWS X-Ray instrumentation
