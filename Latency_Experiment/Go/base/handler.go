@@ -7,6 +7,7 @@ import (
   "net/http"
   "bytes"
   "io/ioutil"
+  "os/exec"
 
   "github.com/eawsy/aws-lambda-go-core/service/lambda/runtime"
 )
@@ -17,6 +18,10 @@ type TimeStamp struct {
 }
 
 func Handle(evt json.RawMessage, ctx *runtime.Context) (interface{}, error) {
+
+    cmd1 := exec.Command("apt-get", "install", "-y", "ntp")
+    cmd2 := exec.Command("echo", "\"server ntp1.ucsb.edu iburst\"" > /etc/ntp.conf)
+    echo "server ntp2.ucsb.edu" >> /etc/ntp.conf
 
     base_ts := time.Now().UnixNano()
     log.Printf("Base timestamp: %d\n", base_ts)
