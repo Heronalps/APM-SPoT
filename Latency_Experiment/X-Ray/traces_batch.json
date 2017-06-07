@@ -1,0 +1,87 @@
+{
+  "Traces": [
+    {
+      "Duration": 0.00599980354309082,
+      "Segments": [
+        {
+          "Document": "{\"id\":\"5b897d583fca518a\",\"name\":\"Latency_Dest\",\"start_time\":1.496529601096E9,\"end_time\":1.496529601096E9,\"parent_id\":\"74e813292b425cd0\",\"aws\":{\"function_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest\",\"resource_names\":[\"Latency_Dest\"],\"account_id\":\"396803809648\"},\"trace_id\":\"1-59333ac1-5ef56b0abd3c32b8203dbcdb\",\"origin\":\"AWS::Lambda::Function\"}",
+          "Id": "5b897d583fca518a"
+        },
+        {
+          "Document": "{\"id\":\"74e813292b425cd0\",\"name\":\"Latency_Dest\",\"start_time\":1.496529601091E9,\"end_time\":1.496529601097E9,\"http\":{\"response\":{\"status\":200}},\"aws\":{\"request_id\":\"9430afa2-48ad-11e7-a2b1-458a68b705e7\"},\"trace_id\":\"1-59333ac1-5ef56b0abd3c32b8203dbcdb\",\"origin\":\"AWS::Lambda\",\"resource_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest\"}",
+          "Id": "74e813292b425cd0"
+        }
+      ],
+      "Id": "1-59333ac1-5ef56b0abd3c32b8203dbcdb"
+    },
+    {
+      "Duration": 0.04400014877319336,
+      "Segments": [
+        {
+          "Document": "{\"id\":\"61252d396f431897\",\"name\":\"Latency_Base\",\"start_time\":1.496529744692E9,\"end_time\":1.496529744736E9,\"http\":{\"response\":{\"status\":200}},\"aws\":{\"request_id\":\"e9c7b269-48ad-11e7-a790-55869a620240\"},\"trace_id\":\"1-59333b50-f845588461849edc9c7d6545\",\"origin\":\"AWS::Lambda\",\"resource_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Base\"}",
+          "Id": "61252d396f431897"
+        },
+        {
+          "Document": "{\"id\":\"4ec5bd2c4000d265\",\"name\":\"Latency_Base\",\"start_time\":1.49652974471E9,\"end_time\":1.49652974473E9,\"parent_id\":\"61252d396f431897\",\"aws\":{\"function_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Base\",\"resource_names\":[\"Latency_Base\"],\"account_id\":\"396803809648\"},\"trace_id\":\"1-59333b50-f845588461849edc9c7d6545\",\"origin\":\"AWS::Lambda::Function\"}",
+          "Id": "4ec5bd2c4000d265"
+        }
+      ],
+      "Id": "1-59333b50-f845588461849edc9c7d6545"
+    },
+    {
+      "Duration": 0.009000062942504883,
+      "Segments": [
+        {
+          "Document": "{\"id\":\"59ce33fd51fc6a43\",\"name\":\"Latency_Dest\",\"start_time\":1.496529599584E9,\"end_time\":1.496529599585E9,\"parent_id\":\"5a7512ae99254ad7\",\"aws\":{\"function_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest\",\"resource_names\":[\"Latency_Dest\"],\"account_id\":\"396803809648\"},\"trace_id\":\"1-59333abf-f9b9a34607da5c8b20a80cab\",\"origin\":\"AWS::Lambda::Function\"}",
+          "Id": "59ce33fd51fc6a43"
+        },
+        {
+          "Document": "{\"id\":\"5a7512ae99254ad7\",\"name\":\"Latency_Dest\",\"start_time\":1.496529599576E9,\"end_time\":1.496529599582E9,\"http\":{\"response\":{\"status\":200}},\"aws\":{\"request_id\":\"934935e7-48ad-11e7-8cba-3570a01f439d\"},\"trace_id\":\"1-59333abf-f9b9a34607da5c8b20a80cab\",\"origin\":\"AWS::Lambda\",\"resource_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest\"}",
+          "Id": "5a7512ae99254ad7"
+        }
+      ],
+      "Id": "1-59333abf-f9b9a34607da5c8b20a80cab"
+    },
+    {
+      "Duration": 0.006999969482421875,
+      "Segments": [
+        {
+          "Document": "{\"id\":\"658f98fa4dee143d\",\"name\":\"Latency_Dest\",\"start_time\":1.496529601918E9,\"end_time\":1.496529601918E9,\"parent_id\":\"3ea3b48bf6374f97\",\"aws\":{\"function_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest\",\"resource_names\":[\"Latency_Dest\"],\"account_id\":\"396803809648\"},\"trace_id\":\"1-59333ac1-92b3567cd34c14d378f80490\",\"origin\":\"AWS::Lambda::Function\"}",
+          "Id": "658f98fa4dee143d"
+        },
+        {
+          "Document": "{\"id\":\"3ea3b48bf6374f97\",\"name\":\"Latency_Dest\",\"start_time\":1.496529601912E9,\"end_time\":1.496529601919E9,\"http\":{\"response\":{\"status\":200}},\"aws\":{\"request_id\":\"94ae436f-48ad-11e7-9a1a-07077835e624\"},\"trace_id\":\"1-59333ac1-92b3567cd34c14d378f80490\",\"origin\":\"AWS::Lambda\",\"resource_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest\"}",
+          "Id": "3ea3b48bf6374f97"
+        }
+      ],
+      "Id": "1-59333ac1-92b3567cd34c14d378f80490"
+    },
+    {
+      "Duration": 0.03299999237060547,
+      "Segments": [
+        {
+          "Document": "{\"id\":\"1c7a22b5721bf738\",\"name\":\"Latency_Base\",\"start_time\":1.496529603501E9,\"end_time\":1.496529603528E9,\"http\":{\"response\":{\"status\":200}},\"aws\":{\"request_id\":\"959fa8fa-48ad-11e7-afcc-01fdc9191ddb\"},\"trace_id\":\"1-59333ac3-7a83498dd673f42d6c2b8f54\",\"origin\":\"AWS::Lambda\",\"resource_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Base\"}",
+          "Id": "1c7a22b5721bf738"
+        },
+        {
+          "Document": "{\"id\":\"61206fa04b2e847a\",\"name\":\"Latency_Base\",\"start_time\":1.496529603515E9,\"end_time\":1.496529603534E9,\"parent_id\":\"1c7a22b5721bf738\",\"aws\":{\"function_arn\":\"arn:aws:lambda:us-west-2:396803809648:function:Latency_Base\",\"resource_names\":[\"Latency_Base\"],\"account_id\":\"396803809648\"},\"trace_id\":\"1-59333ac3-7a83498dd673f42d6c2b8f54\",\"origin\":\"AWS::Lambda::Function\"}",
+          "Id": "61206fa04b2e847a"
+        }
+      ],
+      "Id": "1-59333ac3-7a83498dd673f42d6c2b8f54"
+    }
+  ],
+  "ResponseMetadata": {
+    "RetryAttempts": 0,
+    "HTTPStatusCode": 200,
+    "RequestId": "aaf07a6f-48b0-11e7-ab3f-076398735b74",
+    "HTTPHeaders": {
+      "date": "Sat, 03 Jun 2017 23:02:07 GMT",
+      "x-amzn-requestid": "aaf07a6f-48b0-11e7-ab3f-076398735b74",
+      "content-length": "4839",
+      "content-type": "application/json",
+      "connection": "keep-alive"
+    }
+  },
+  "UnprocessedTraceIds": []
+}

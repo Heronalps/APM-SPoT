@@ -1,0 +1,56 @@
+{
+    "Duration": 0.15000009536743164,
+    "Id": "1-593469d4-f24e5c5528ffcd512d69d34d",
+    "Segments": [
+        {
+            "Document": {
+                "id": "625506df980bad53",
+                "name": "Latency_Dest",
+                "start_time": 1496607188.651,
+                "end_time": 1496607188.799,
+                "http": {
+                    "response": {
+                        "status": 200
+                    }
+                },
+                "aws": {
+                    "request_id": "39f7c0f9-4962-11e7-9d8c-0b895fbae5f9"
+                },
+                "trace_id": "1-593469d4-f24e5c5528ffcd512d69d34d",
+                "origin": "AWS::Lambda",
+                "resource_arn": "arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest"
+            },
+            "Id": "625506df980bad53"
+        },
+        {
+            "Document": {
+                "id": "6f4d8a980c23eb24",
+                "name": "Latency_Dest",
+                "start_time": 1496607188.801,
+                "end_time": 1496607188.801,
+                "parent_id": "625506df980bad53",
+                "aws": {
+                    "function_arn": "arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest",
+                    "resource_names": [
+                        "Latency_Dest"
+                    ],
+                    "account_id": "396803809648"
+                },
+                "trace_id": "1-593469d4-f24e5c5528ffcd512d69d34d",
+                "origin": "AWS::Lambda::Function",
+                "subsegments": [
+                    {
+                        "id": "6c38d6ed3d6d1c67",
+                        "name": "Initialization",
+                        "start_time": 1496607188.8,
+                        "end_time": 1496607188.801,
+                        "aws": {
+                            "function_arn": "arn:aws:lambda:us-west-2:396803809648:function:Latency_Dest"
+                        }
+                    }
+                ]
+            },
+            "Id": "6f4d8a980c23eb24"
+        }
+    ]
+}
